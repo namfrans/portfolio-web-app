@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
+import image from './assets/images/banner2.jpg'
 
 export default function About() {
     return (
@@ -8,7 +9,7 @@ export default function About() {
                 <h1 className="title">About me</h1>
                 <div className="about-content">
                     <div className="column left">
-                        <img src="./images/banner2.jpg" alt="TestIMG" id="about-img" />
+                        <img src={image} alt="TestIMG" id="about-img" />
                     </div>
                     <div className="column right">
                         <div className="text">I'm Frans and I'm a <span className="typing-2"></span></div>
