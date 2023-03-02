@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink as Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
 
 export default function About() {
     return (
@@ -13,7 +13,9 @@ export default function About() {
                     <div className="column right">
                         <div className="text">I'm Frans and I'm a <span className="typing-2"></span></div>
                         <p>I joined web development in middle of last year at my respective University, I enjoyed it and had it as my favourize module of the semester. I like building something out of my imgination, it impreses me so much. I am passionate to work with extremely talented people to gain exeprience, and get awaken about tech.</p>
-                        <Link alt="resume">Access Resume</Link>
+                        <Router>
+                            <Link to="/resume" alt="resume">Access Resume</Link>
+                        </Router>
                     </div>
                 </div>
             </div>

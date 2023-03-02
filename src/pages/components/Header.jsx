@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink as Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
 
 export default function Header() {
     return(
@@ -9,6 +9,7 @@ export default function Header() {
             </div>
             <nav id="navbar">
                 <div className="max-width">
+                <Router>
                     <div className="logo"><Link to="/">Fra<span>ns.</span></Link></div>
                     <div className="menu-items">
                         <li><Link to="/about-me" className="menu-button nav-link">About me</Link></li>
@@ -21,6 +22,7 @@ export default function Header() {
                     <div className="menu-button">
                         <i className="fas fa-bars"></i>
                     </div>
+                </Router>
                 </div>
             </nav>
             <br></br>

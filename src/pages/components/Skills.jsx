@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink as Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
 
 export default function Skills(){
     return(
@@ -10,7 +10,9 @@ export default function Skills(){
                     <div className="column left">
                         <div className="text">My technical skills and exeprience</div>
                         <p>A paragraph taht talks about my technical skills and exeprience</p>
-                        <Link to="/read-more-about-me">Read more</Link>
+                        <Router>
+                            <Link to="/read-more-about-me">Read more</Link>
+                        </Router>
                     </div>
                     <div className="column right">
                         <div className="bars">
