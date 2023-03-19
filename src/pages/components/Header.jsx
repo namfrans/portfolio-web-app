@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
+import {Link} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 export default function Header() {
     return(
@@ -9,20 +10,18 @@ export default function Header() {
             </div>
             <nav id="navbar">
                 <div className="max-width">
-                <Router>
-                    <div className="logo"><Link to="/">Fra<span>ns.</span></Link></div>
+                    <div className="logo"><Link to="/"><i class="fa-solid fa-terminal fa-beat-fade fa-xs"></i>Fra<span>ns.</span></Link></div>
                     <div className="menu-items">
-                        <li><Link to="/about-me" className="menu-button nav-link">About me</Link></li>
-                        <li><Link to="/services-section" className="menu-button nav-link">Services</Link></li>
-                        <li><Link to="/skills-section" className="menu-button nav-link">Skills</Link></li>
-                        <li><Link to="/projects-section" className="menu-button nav-link">Projects</Link></li>
-                        <li><Link to="/team-section" className="menu-button nav-link">Team</Link></li>
-                        <li><Link to="/contact-section" className="menu-button nav-link">Contact me</Link></li>
+                        <li><HashLink smooth to="/#about-me" className="menu-button nav-link">About</HashLink></li>
+                        <li><HashLink smooth to="/#services-section" className="menu-button nav-link">Services</HashLink></li>
+                        <li><HashLink smooth to="/#skills-section" className="menu-button nav-link">Skills</HashLink></li>
+                        <li><HashLink smooth to="/#team-section" className="menu-button nav-link">Projects</HashLink></li>
+                        {/* <li><HashLink smooth to="/#team-section" className="menu-button nav-link">Team</HashLink></li> */}
+                        <li><HashLink smooth to="/#contact-section" className="menu-button nav-link">Contact</HashLink></li>
                     </div>
                     <div className="menu-button">
                         <i className="fas fa-bars"></i>
                     </div>
-                </Router>
                 </div>
             </nav>
             <br></br>

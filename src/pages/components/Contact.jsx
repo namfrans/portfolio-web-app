@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+    const [status, setStatus] = useState("Send");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        const { name, email, subject, message } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value,
+        };
+        let response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Send");
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+        let result = await response.json();
+        alert(result.status);
+    };
     return (
-        
         <section className="contact-section" id="contact-section">
             <div className="max-width">
                 <h1 className="title">Contact me</h1>
@@ -36,23 +61,23 @@ export default function Contact() {
                     </div>
                     <div className="column right">
                         <div className="text">Text Me</div>
-                        <form action="#">
+                        <form onSubmit={handleSubmit}>
                             <div className="fields">
                                 <div className="field name">
-                                    <input type="text" placeholder="Name" required />
+                                    <input type="text" id="name" placeholder="Name" required />
                                 </div>
                                 <div className="field email">
-                                    <input type="email" placeholder="Email" required />
+                                    <input type="email" id="email" placeholder="Email" required />
                                 </div>
                             </div>
                             <div className="field">
-                                <input type="text" placeholder="Subject" required />
+                                <input type="text" id="subject" placeholder="Subject" required />
                             </div>
                             <div className="field textarea">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
                             </div>
                             <div className="button">
-                                <button type="submit">Send</button>
+                                <button type="submit">{status}</button>
                             </div>
                         </form>
                     </div>

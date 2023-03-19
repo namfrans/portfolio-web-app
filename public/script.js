@@ -14,14 +14,14 @@ $(document).ready(function(){
     
     //Typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Programmer","Trader","Designer", "Freelancer"],
+        strings: ["Software Engineer", "Data Analyst","Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Programmer","Trader","Designer", "Freelancer"],
+        strings: ["Software Engineer", "Data Analyst","Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

@@ -1,12 +1,10 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Footer(){
     return(
         <footer>
-            <Router>
-                <span> &copy; 2022 Developer: <Link to="/about-me">Frans Nambuli</Link> |<span> All rights reserved</span></span>
-            </Router>
+            <span> &copy; 2022 Developer: <HashLink smooth to="/#about-me">Frans Nambuli</HashLink> |<span> All rights reserved</span></span>
         </footer>
     )
 }

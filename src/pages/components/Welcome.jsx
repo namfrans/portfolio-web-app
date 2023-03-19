@@ -1,5 +1,6 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
+import { Link } from 'react-router-dom';
+import Image from './assets/images/profile_img-removebg-preview.png'
 
 export default function Welcome() {
     return (
@@ -9,10 +10,11 @@ export default function Welcome() {
                     <div className="text1">Hello, my name is</div>
                     <div className="text2">Frans Nambuli</div>
                     <div className="text3">And I am a <span className="typing"></span></div>
-                    <Router>
-                        <Link to="/contact-section">Hire me</Link>
-                    </Router>
+                    <Link to={process.env.TELEGRAM_CHANNEL}>Hire me <i class="fa-brands fa-telegram"></i></Link>
                 </div>
+            </div>
+            <div className="home-img">
+                <img src={Image} alt="TestIMG" id="banner-img" />
             </div>
         </section>
     );

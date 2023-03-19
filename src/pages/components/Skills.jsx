@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Navigate, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export default function Skills(){
     return(
@@ -9,37 +9,35 @@ export default function Skills(){
                 <div className="skills-content">
                     <div className="column left">
                         <div className="text">My technical skills and exeprience</div>
-                        <p>A paragraph taht talks about my technical skills and exeprience</p>
-                        <Router>
-                            <Link to="/read-more-about-me">Read more</Link>
-                        </Router>
+                        <p>I am proficient in various programming languages such as JavaScript, Java, and Python. I have also gained experience in software development through coursework and personal projects.</p>
+                        <Link to="https://github.com/namfrans">Read more</Link>
                     </div>
                     <div className="column right">
                         <div className="bars">
                             <div className="info">
-                                <span>HTML</span>
-                                <span>90%</span>
+                                <span>MERN Stack</span>
+                                <span>80%</span>
                             </div>
                             <div className="line html"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>CSS</span>
-                                <span>80%</span>
+                                <span>Android SDK</span>
+                                <span>75%</span>
                             </div>
                             <div className="line css"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>JavaScript</span>
-                                <span>60%</span>
+                                <span>JavaScript ES6</span>
+                                <span>80%</span>
                             </div>
                             <div className="line js"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>Python</span>
-                                <span>60%</span>
+                                <span>Python 3+</span>
+                                <span>70%</span>
                             </div>
                             <div className="line python"></div>
                         </div>
@@ -53,14 +51,14 @@ export default function Skills(){
                         <div className="bars">
                             <div className="info">
                                 <span>SQL Server</span>
-                                <span>75%</span>
+                                <span>85%</span>
                             </div>
                             <div className="line sql"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>ASP.net</span>
-                                <span>55%</span>
+                                <span>C#</span>
+                                <span>65%</span>
                             </div>
                             <div className="line asp"></div>
                         </div>
@@ -73,8 +71,8 @@ export default function Skills(){
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>PHP</span>
-                                <span>80%</span>
+                                <span>Kotlin</span>
+                                <span>65%</span>
                             </div>
                             <div className="line php"></div>
                         </div>
