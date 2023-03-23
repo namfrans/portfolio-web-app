@@ -14,7 +14,7 @@ export default function About() {
                     <div className="column right">
                         <div className="text">I'm Frans and I'm a <span className="typing-2"></span></div>
                         <p>Enthusiastic, energetic young software specialist skilled in software development with a strong foundation in computer programming, logic, and problem-solving. I work as a Junior Full-Stack engineer, selflessly collaborating with a good team of ambitiouse men. I am eager to learn and have a strong passion for technology.</p>
-                        <Link to="/resume" alt="resume">Access Resume</Link>
+                        <Link to="https://drive.google.com/file/d/1FONRuy28ZlmCXFIIObvWiOY6T3zIkYox/view?usp=sharing" alt="resume">Access Resume</Link>
                     </div>
                 </div>
             </div>
