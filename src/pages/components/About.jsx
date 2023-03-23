@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from './assets/images/portfolio_image_gif.gif'
+import image from './assets/images/profile_img-removebg-preview.png'
 
 export default function About() {
     return (

@@ -13,8 +13,10 @@ export default function Welcome() {
                     <Link to={process.env.TELEGRAM_CHANNEL}>Hire me <i class="fa-brands fa-telegram"></i></Link>
                 </div>
             </div>
-            <div className="home-img">
-                <img src={Image} alt="TestIMG" id="banner-img" />
+            <div className="shadow-div">
+                <div className="home-img">
+                    <img src={Image} alt="TestIMG" id="banner-img" />
+                </div>
             </div>
         </section>
     );
