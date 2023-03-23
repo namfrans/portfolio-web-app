@@ -10,7 +10,7 @@ export default function Welcome() {
                     <div className="text1">Hello, my name is</div>
                     <div className="text2">Frans Nambuli</div>
                     <div className="text3">And I am a <span className="typing"></span></div>
-                    <Link to={process.env.TELEGRAM_CHANNEL}>Hire me <i class="fa-brands fa-telegram"></i></Link>
+                    <Link to="https://t.me/+3LOuKpNEFMQ4ODBk">Hire me <i class="fa-brands fa-telegram"></i></Link>
                 </div>
             </div>
             <div className="shadow-div">
